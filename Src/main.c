@@ -72,6 +72,7 @@ static void MX_WWDG_Init(void);
 
 /* USER CODE BEGIN 0 */
 
+
 /* USER CODE END 0 */
 
 int main(void)
@@ -110,6 +111,7 @@ int main(void)
 
   /* USER CODE BEGIN 3 */
     HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+    HAL_Delay(1000); // задержка 1 сек
   }
   /* USER CODE END 3 */
 
@@ -146,7 +148,7 @@ void SystemClock_Config(void)
 
   HAL_RCC_EnableCSS();
 
-  HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/36000);
+  HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/1000);
 
   HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
 
