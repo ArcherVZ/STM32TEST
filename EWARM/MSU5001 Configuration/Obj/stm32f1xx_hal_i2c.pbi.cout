@@ -1,16 +1,16 @@
-"D:\Work Folder\Projects\STM32\Exmpl_1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c"
+"C:\Documents and Settings\Vassily\Рабочий стол\STM32TEST\trunk\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c"
 -std=c99
 -ferror-limit=100
 -I
-D:\Work Folder\Projects\STM32\Exmpl_1\EWARM\..\Inc
+C:\Documents and Settings\Vassily\Рабочий стол\STM32TEST\trunk\EWARM\..\Inc
 -I
-D:\Work Folder\Projects\STM32\Exmpl_1\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc
+C:\Documents and Settings\Vassily\Рабочий стол\STM32TEST\trunk\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc
 -I
-D:\Work Folder\Projects\STM32\Exmpl_1\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy
+C:\Documents and Settings\Vassily\Рабочий стол\STM32TEST\trunk\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy
 -I
-D:\Work Folder\Projects\STM32\Exmpl_1\EWARM\..\Drivers\CMSIS\Include
+C:\Documents and Settings\Vassily\Рабочий стол\STM32TEST\trunk\EWARM\..\Drivers\CMSIS\Include
 -I
-D:\Work Folder\Projects\STM32\Exmpl_1\EWARM\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include
+C:\Documents and Settings\Vassily\Рабочий стол\STM32TEST\trunk\EWARM\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include
 -I
 D:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -I
@@ -18,15 +18,15 @@ D:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\inc
 -I
 D:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\inc\c
 -I
-D:\Work Folder\Projects\STM32\Exmpl_1\Inc
+C:\Documents and Settings\Vassily\Рабочий стол\STM32TEST\trunk\Inc
 -I
-D:\Work Folder\Projects\STM32\Exmpl_1\Drivers\STM32F1xx_HAL_Driver\Inc
+C:\Documents and Settings\Vassily\Рабочий стол\STM32TEST\trunk\Drivers\STM32F1xx_HAL_Driver\Inc
 -I
-D:\Work Folder\Projects\STM32\Exmpl_1\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy
+C:\Documents and Settings\Vassily\Рабочий стол\STM32TEST\trunk\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy
 -I
-D:\Work Folder\Projects\STM32\Exmpl_1\Drivers\CMSIS\Include
+C:\Documents and Settings\Vassily\Рабочий стол\STM32TEST\trunk\Drivers\CMSIS\Include
 -I
-D:\Work Folder\Projects\STM32\Exmpl_1\Drivers\CMSIS\Device\ST\STM32F1xx\Include
+C:\Documents and Settings\Vassily\Рабочий стол\STM32TEST\trunk\Drivers\CMSIS\Device\ST\STM32F1xx\Include
 -I
 D:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -DUSE_HAL_DRIVER=1

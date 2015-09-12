@@ -109,7 +109,7 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-
+    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
   }
   /* USER CODE END 3 */
 
@@ -146,7 +146,7 @@ void SystemClock_Config(void)
 
   HAL_RCC_EnableCSS();
 
-  HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/1000);
+  HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/36000);
 
   HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
 
