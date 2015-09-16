@@ -168,7 +168,7 @@ void LCD_X_Config(void) {
   //
   // Set display driver and color conversion
   //
-  pDevice = GUI_DEVICE_CreateAndLink(GUIDRV_FLEXCOLOR, GUICC_565, 0, 0);
+  pDevice = GUI_DEVICE_CreateAndLink(GUIDRV_FLEXCOLOR, GUICC_666, 0, 0);
   //
   // Display driver configuration, required for Lin-driver
   //
@@ -177,7 +177,7 @@ void LCD_X_Config(void) {
   //
   // Orientation
   //
-  Config.Orientation = GUI_SWAP_XY | GUI_MIRROR_Y;
+  Config.Orientation = 0;//GUI_SWAP_XY | GUI_MIRROR_Y;
   GUIDRV_FlexColor_Config(pDevice, &Config);
   //
   // Set controller and operation mode
@@ -186,7 +186,7 @@ void LCD_X_Config(void) {
   PortAPI.pfWrite16_A1  = LcdWriteData;
   PortAPI.pfWriteM16_A1 = LcdWriteDataMultiple;
   PortAPI.pfReadM16_A1  = LcdReadDataMultiple;
-  GUIDRV_FlexColor_SetFunc(pDevice, &PortAPI, GUIDRV_FLEXCOLOR_F66708, GUIDRV_FLEXCOLOR_M16C0B16);
+  GUIDRV_FlexColor_SetFunc(pDevice, &PortAPI, GUIDRV_FLEXCOLOR_F66720, GUIDRV_FLEXCOLOR_M16C0B8);
 }
 
 /*********************************************************************
@@ -224,7 +224,124 @@ int LCD_X_DisplayDriver(unsigned LayerIndex, unsigned Cmd, void * pData) {
     // to be adapted by the customer...
     //
     // ...
+    
+    LcdWriteReg(0x01);  //Software Reset
+    LcdWriteReg(0x01);
+    LcdWriteReg(0x01);
+    LcdWriteReg(0xe0);  //START PLL
+    LcdWriteData(0x01);
+    LcdWriteReg(0xe0);  //LOCK PLL
+    LcdWriteData(0x03);
+    
+    LcdWriteReg(0xb0);	//SET LCD MODE  SET TFT 18Bits MODE
+    LcdWriteData(0x08);	//SET TFT MODE & hsync+Vsync+DEN MODE
+    LcdWriteData(0x80);	//SET TFT MODE & hsync+Vsync+DEN MODE
+    LcdWriteData(0x01);	//SET horizontal size=480-1 HightByte
+    LcdWriteData(0xdf); //SET horizontal size=480-1 LowByte
+    LcdWriteData(0x01);	//SET vertical size=272-1 HightByte
+    LcdWriteData(0x0f);	//SET vertical size=272-1 LowByte
+    LcdWriteData(0x00);	//SET even/odd line RGB seq.=RGB
+    
+    LcdWriteReg(0xf0); //SET pixel data I/F format=8bit
+    LcdWriteData(0x00);
+    LcdWriteReg(0x3a);  // SET R G B format = 6 6 6
+    LcdWriteData(0x60);
+    
+    LcdWriteReg(0xe2);  //SET PLL freq=113.33MHz ;
+    LcdWriteData(0x22);
+    LcdWriteData(0x03);
+    LcdWriteData(0x04);
+    
+    LcdWriteReg(0xe6);  //SET PCLK freq=9MHz  ; pixel clock frequency
+    LcdWriteData(0x01);
+    LcdWriteData(0x45);
+    LcdWriteData(0x47);	//
+    
+    LcdWriteReg(0xb4);	//SET HBP, 
+    LcdWriteData(0x02);	//SET HSYNC Tatol 525
+    LcdWriteData(0x0d);
+    LcdWriteData(0x00);	//SET HBP 43
+    LcdWriteData(0x2b);
+    LcdWriteData(0x28);	//SET VBP 41=40+1
+    LcdWriteData(0x00);	//SET Hsync pulse start position
+    LcdWriteData(0x00);
+    LcdWriteData(0x00);	//SET Hsync pulse subpixel start position
+    
+    LcdWriteReg(0xb6); 	//SET VBP, 
+    LcdWriteData(0x01);	//SET Vsync total 286=285+1
+    LcdWriteData(0x1d);
+    LcdWriteData(0x00);	//SET VBP=12
+    LcdWriteData(0x0c);
+    LcdWriteData(0x09);	//SET Vsync pulse 10=9+1
+    LcdWriteData(0x00);	//SET Vsync pulse start position
+    LcdWriteData(0x00);
+    
+    LcdWriteReg(0x2a);	//SET column address
+    LcdWriteData(0x00);	//SET start column address=0
+    LcdWriteData(0x00);
+    LcdWriteData(0x01);	//SET end column address=479
+    LcdWriteData(0xdf);
+    
+    LcdWriteReg(0x2b);	//SET page address
+    LcdWriteData(0x00);	//SET start page address=0
+    LcdWriteData(0x00);
+    LcdWriteData(0x01);	//SET end page address=271
+    LcdWriteData(0x0f);
+    
+    LcdWriteReg(0x29);		//SET display on
+    LcdWriteReg(0x2c);
     return 0;
+  }
+  case LCD_X_SETVRAMADDR: {
+       //
+       // Required for setting the address of the video RAM for drivers
+       // with memory mapped video RAM which is passed in the 'pVRAM' element of p
+       //
+       //LCD_X_SETVRAMADDR_INFO * p;
+       //p = (LCD_X_SETVRAMADDR_INFO *)pData;
+       //...
+       return 0;
+     }
+  case LCD_X_SETORG: {
+      //
+      // Required for setting the display origin which is passed in the 'xPos' and 'yPos' element of p
+      //
+      //LCD_X_SETORG_INFO * p;
+      //p = (LCD_X_SETORG_INFO *)pData;
+      //...
+      return 0;
+  }
+  case LCD_X_SHOWBUFFER: {
+      //
+      // Required if multiple buffers are used. The 'Index' element of p contains the buffer index.
+      //
+      //LCD_X_SHOWBUFFER_INFO * p;
+      //p = (LCD_X_SHOWBUFFER_INFO *)pData;
+      //...
+      return 0;
+  }
+  case LCD_X_SETLUTENTRY: {
+      //
+      // Required for setting a lookup table entry which is passed in the 'Pos' and 'Color' element of p
+      //
+      //LCD_X_SETLUTENTRY_INFO * p;
+      //p = (LCD_X_SETLUTENTRY_INFO *)pData;
+      //...
+      return 0;
+  }
+  case LCD_X_ON: {
+      //
+      // Required if the display controller should support switching on and off
+      //
+      LcdWriteReg(0x29);		//SET display on
+      return 0;
+  }
+  case LCD_X_OFF: {
+      //
+      // Required if the display controller should support switching on and off
+      //
+      LcdWriteReg(0x28);		//SET display off
+      return 0;
   }
   default:
     r = -1;

@@ -101,6 +101,7 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
   GUI_Init();
+  GUI_DispString("Hello world!");
   /* USER CODE END 2 */
 
   /* Infinite loop */

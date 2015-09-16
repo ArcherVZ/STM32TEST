@@ -1059,6 +1059,9 @@
     <group>
       <name>User</name>
       <file>
+        <name>$PROJ_DIR$\..\Src\history.txt</name>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\Src\main.c</name>
       </file>
       <file>
@@ -1138,10 +1141,19 @@
       <name>$PROJ_DIR$\..\Config\GUIConf.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\..\Config\GUIConf.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\Config\GUIDRV_Template.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\..\Config\GUIDRV_Template.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\Config\LCDConf_FlexColor_Template.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Config\LCDConf_FlexColor_Template.h</name>
     </file>
   </group>
 </project>

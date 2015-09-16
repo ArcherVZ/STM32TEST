@@ -16,6 +16,8 @@ d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\..\GUI
 -I
 d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\..\GUI\inc
 -I
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\..\Config
+-I
 C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\inc
@@ -35,6 +37,8 @@ d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\Drivers\CMSIS\Device\ST\S
 d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\GUI
 -I
 d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\GUI\inc
+-I
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\Config
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -DUSE_HAL_DRIVER=1

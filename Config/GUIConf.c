@@ -93,4 +93,19 @@ void GUI_X_Config(void) {
   GUI_SetDefaultFont(GUI_FONT_6X8);
 }
 
+
+/*********************************************************************
+*
+*       GUI_X_Init()
+*
+* Note:
+*     GUI_X_Init() is called from GUI_Init is a possibility to init
+*     some hardware which needs to be up and running before the GUI.
+*     If not required, leave this routine blank.
+*/
+
+void GUI_X_Init(void)
+{
+}
+
 /*************************** End of file ****************************/
