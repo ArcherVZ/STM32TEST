@@ -34,7 +34,8 @@ Purpose     : To be used only by the display drivers
 #ifndef LCD_Private_H
 #define LCD_Private_H
 
-#include "LCDConf.h"
+//#include "LCDConf.h"
+#include "LCDConf_FlexColor_Template.h"
 #include "LCD_Protected.h"
 #include "GUI.h"
 

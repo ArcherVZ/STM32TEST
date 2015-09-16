@@ -1,16 +1,20 @@
-"C:\Documents and Settings\User\Рабочий стол\STM32\trunk\Src\stm32f1xx_it.c"
+"d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\Src\stm32f1xx_it.c"
 -std=c99
 -ferror-limit=100
 -I
-C:\Documents and Settings\User\Рабочий стол\STM32\trunk\EWARM\..\Inc
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\..\Inc
 -I
-C:\Documents and Settings\User\Рабочий стол\STM32\trunk\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc
 -I
-C:\Documents and Settings\User\Рабочий стол\STM32\trunk\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy
 -I
-C:\Documents and Settings\User\Рабочий стол\STM32\trunk\EWARM\..\Drivers\CMSIS\Include
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\..\Drivers\CMSIS\Include
 -I
-C:\Documents and Settings\User\Рабочий стол\STM32\trunk\EWARM\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include
+-I
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\..\GUI
+-I
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\..\GUI\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -I
@@ -18,15 +22,19 @@ C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\inc\c
 -I
-C:\Documents and Settings\User\Рабочий стол\STM32\trunk\Inc
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\Inc
 -I
-C:\Documents and Settings\User\Рабочий стол\STM32\trunk\Drivers\STM32F1xx_HAL_Driver\Inc
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\Drivers\STM32F1xx_HAL_Driver\Inc
 -I
-C:\Documents and Settings\User\Рабочий стол\STM32\trunk\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy
 -I
-C:\Documents and Settings\User\Рабочий стол\STM32\trunk\Drivers\CMSIS\Include
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\Drivers\CMSIS\Include
 -I
-C:\Documents and Settings\User\Рабочий стол\STM32\trunk\Drivers\CMSIS\Device\ST\STM32F1xx\Include
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\Drivers\CMSIS\Device\ST\STM32F1xx\Include
+-I
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\GUI
+-I
+d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\GUI\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -DUSE_HAL_DRIVER=1

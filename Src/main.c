@@ -34,7 +34,7 @@
 #include "stm32f1xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "GUI.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -100,7 +100,7 @@ int main(void)
   MX_WWDG_Init();
 
   /* USER CODE BEGIN 2 */
-
+  GUI_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */

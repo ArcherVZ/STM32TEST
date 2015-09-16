@@ -25,7 +25,7 @@ if not "%1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Documents and Settings\User\Рабочий стол\STM32\trunk\EWARM\settings\MSU5001.MSU5001 Configuration.general.xcl" --backend -f "C:\Documents and Settings\User\Рабочий стол\STM32\trunk\EWARM\settings\MSU5001.MSU5001 Configuration.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\settings\MSU5001.MSU5001 Configuration.general.xcl" --backend -f "d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\settings\MSU5001.MSU5001 Configuration.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Documents and Settings\User\Рабочий стол\STM32\trunk\EWARM\settings\MSU5001.MSU5001 Configuration.general.xcl" "--debug_file=%1" --backend -f "C:\Documents and Settings\User\Рабочий стол\STM32\trunk\EWARM\settings\MSU5001.MSU5001 Configuration.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\settings\MSU5001.MSU5001 Configuration.general.xcl" "--debug_file=%1" --backend -f "d:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\EWARM\settings\MSU5001.MSU5001 Configuration.driver.xcl" 
 
 @echo off 
 :end

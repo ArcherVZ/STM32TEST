@@ -247,7 +247,7 @@
         <option>
           <name>CCAllowList</name>
           <version>1</version>
-          <state>11111110</state>
+          <state>00000000</state>
         </option>
         <option>
           <name>CCDebugInfo</name>
@@ -320,6 +320,9 @@
           <state>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy</state>
           <state>$PROJ_DIR$\..\Drivers\CMSIS\Include</state>
           <state>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include</state>
+          <state>$PROJ_DIR$\..\GUI</state>
+          <state>$PROJ_DIR$\..\GUI\inc</state>
+          <state>$PROJ_DIR$\..\Config</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -339,7 +342,7 @@
         </option>
         <option>
           <name>CCOptLevel</name>
-          <state>3</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCOptStrategy</name>
@@ -348,7 +351,7 @@
         </option>
         <option>
           <name>CCOptLevelSlave</name>
-          <state>3</state>
+          <state>1</state>
         </option>
         <option>
           <name>CompilerMisraRules98</name>
@@ -778,7 +781,7 @@
         </option>
         <option>
           <name>IlinkAdditionalLibs</name>
-          <state></state>
+          <state>D:\WORK FOLDER\Projects\VMZ\MSU-500\PRG_WRK_Copy\trunk\GUI\Lib\STemWin528_CM3_IAR.a</state>
         </option>
         <option>
           <name>IlinkOverrideProgramEntryLabel</name>
@@ -1045,6 +1048,18 @@
         <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_wwdg.c</name>
       </file>
     </group>
+  </group>
+  <group>
+    <name>GUI</name>
+    <file>
+      <name>$PROJ_DIR$\..\Config\GUIConf.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Config\GUIDRV_Template.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Config\LCDConf_FlexColor_Template.c</name>
+    </file>
   </group>
 </project>
 

@@ -34,7 +34,7 @@ Purpose     : Valid LCD configuration and defaults
 #ifndef LCD_CONFIG_DEFAULTS_H
 #define LCD_CONFIG_DEFAULTS_H
 
-#include "LCDConf.h"            /* Configuration header file */
+#include "LCDConf_FlexColor_Template.h"            /* Configuration header file */
 
 /**********************************************************
 *

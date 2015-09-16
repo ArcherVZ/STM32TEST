@@ -1132,6 +1132,18 @@
       </file>
     </group>
   </group>
+  <group>
+    <name>GUI</name>
+    <file>
+      <name>$PROJ_DIR$\..\Config\GUIConf.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Config\GUIDRV_Template.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Config\LCDConf_FlexColor_Template.c</name>
+    </file>
+  </group>
 </project>
 
 
